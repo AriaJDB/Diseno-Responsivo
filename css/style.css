@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+@media (min-width:1146px) and (max-width:2000px) {
+    table{
+        width: 80%;
+        border-collapse: collapse;
+        border: 3px solid gray;
+    }
+    
+    th{
+        background-color: darkcyan;
+        color: white;
+    }
+    
+    td{
+        padding: 10px;
+        text-align: center;
+        border: 1px solid darkcyan;
+    }
+    
+    tr:nth-child(odd){
+        background-color: cadetblue;
+    }
+    
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .descripcion{
+        width: 40%;
+    }
+
+    .fichacon{
+        display: none;
+    }
+    .fichaen{
+        display: none;
+    }
+}
+
+@media (min-width:300px) and (max-width:1145px){
+    
+    .fichas{
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .fichacon{
+        border: 1px solid gray;
+        text-align: center;
+        margin: 20px;
+    }
+    .fichaen{
+        background-color: cadetblue;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .contenedor{
+        display: none;
+    }
+}
